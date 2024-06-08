@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CADASTRO FORMADOR</title>
+  </head>
+  <body
+    class="h-screen flex items-center justify-center  flex-col lg:flex-row bg-gradient-to-tr to-blue-100 from-white"
+  >
+  <img src="./src/img/pexels-ketut-subiyanto-4126749.jpg" alt="" class="lg:w-1/2 w-full lg:h-full h-1/4 object-cover ">
+    <form
+      class="space-y-10 w-full lg:w-1/2 h-3/4 px-5 py-5 lg:px-20"
+      action="atualizar_dados_formador.php?id_formadores=<?php echo $_GET['id_formadores'];?>"
+      method="post"
+    >
+      <h1 class="text-2xl font-bold">CADASTRA-SE COMO PROFESSOR</h1>
+      <div class="flex flex-col">
+        <label for="">Nome:</label>
+        <input
+          type="text"
+          name="Nome"
+          id=""
+          maxlength="20"
+          required
+          class="h-10 rounded-lg p-2 mt-2 border border-slate-300"
+        />
+      </div>
+
+      <div class="">
+        <label for="contacto">Contacto</label>
+        <input
+          type="number"
+          name="Contacto"
+          id="contacto"
+          maxlength="20"
+          required
+          
+          value="<?php echo $contacto ?>"
+          class="bg-white border border-slate-300 rounded-lg p-2"
+        />
+      </div>
+
+      <div class="">
+        <label for="">Salário:</label>
+        <input
+          type="number"
+          name="Salario"
+          placeholder="Digite o salário"
+          required
+          step="0.001"
+          value="<?php echo $salario?>"
+          class="bg-white border border-slate-300 rounded-lg p-2"
+        />
+      </div>
+
+      <input
+        type="submit"
+        value="atualizar_dados"
+        name="atualizar_dados_formador"
+        class="text-white rounded-lg p-3 bg-blue-700 hover:bg-blue-800"
+      onclick="Cadastrar()"/>
+    </form>
+  </body>
+</html>

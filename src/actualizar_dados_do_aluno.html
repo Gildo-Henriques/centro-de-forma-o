@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ATUALIZAR_DADOS</title>
+</head>
+<body class="h-screen flex items-center justify-center bg-gradient-to-tr px-5 to-blue-100 from-white">
+    <form class="space-y-10" action="atualizar_dados_aluno.php?id_aluno=<?php echo $_GET['id_aluno'];?>" method="post">
+
+        <h1 class="text-2xl font-bold">FORMULARIO DE ATUALIZAÇÃO DOS DADOS DO ALUNO</h1>
+       <div class="flex flex-col">
+        <label for="nome" class="font-semibold mb-3">Nome:</label>
+        <input
+        type="text"
+        name="nome"
+        maxlength="10"
+        required
+        class="h-10 rounded-lg p-2 border border-slate-300"
+        id="nome"
+      />
+       </div>
+
+
+       <div class="">
+        <label for="Genero" class="font-semibold mb-3">Genero:</label>
+        <select name="Genero" id="Genero" class="p-2 rounded-lg bg-white border border-slate-300">
+            <option value=value"<?php echo $genero ?>"> 
+            <option value="Masculino ">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+       </div>
+
+
+       <div class="">
+        <label for="data" class="font-semibold mb-3">Data de nascimento:</label>
+        <input type="date" name="Data_Nascimento" id="data" required value="<?php echo $data_nascimento ?>" class="bg-white border border-slate-300 rounded-lg p-3">
+
+       </div>
+    
+       <div class="">
+        <label for="contacto" class="font-semibold mb-3">Contacto:</label>
+        <input type="number" name="Contacto" id="contacto" maxlength="9" required  value="<?php echo $contacto?>" class="bg-white border border-slate-300 rounded-lg p-2">
+       </div>
+
+        <input type="submit" value="ATUALIZAR_DADOS" name="atualizar dados" autofocus class="text-white rounded-lg p-3 bg-blue-700 hover:bg-blue-800">
+
+    </form>
+
+</body>
+</html>

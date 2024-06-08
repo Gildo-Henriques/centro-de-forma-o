@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AREA RESERVADA</title>
+  </head>
+  <body class="flex h-screen lg:flex-row flex-col items-center justify-center">
+    <img src="./src/img/5165290.jpg" alt="" class="w-1/2" />
+    <div
+      class="lg:w-1/2 w-full bg-blue-700 h-full flex items-center justify-center lg:px-48 px-10"
+    >
+      <form
+        action="#"
+        method="post"
+        class="flex w-full flex-col p-5 bg-slate-200 h-96 justify-around rounded-lg shadow-xl"
+      >
+        <img src="./src/img/Sem título.png" alt="" class="h-20 w-52 mx-auto" />
+        <br />
+        <div class="flex flex-col w-full">
+          <label for="nome" class="font-semibold mb-3">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            maxlength="10"
+            required
+            class="h-10 rounded-lg p-2"
+            id="nome"
+          />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <label for="senha" class="font-semibold mb-3">Senha:</label>
+          <input
+            type="password"
+            name="senha"
+            maxlength="10"
+            required
+            class="h-10 rounded-lg p-2"
+            id="senha"
+          />
+        </div>
+
+        <input
+          type="submit"
+          value="Entrar"
+          name="logar"
+          class="text-white bg-blue-700 hover:bg-blue-800 p-2 rounded-lg"
+        />
+      </form>
+    </div>
+  </body>
+</html>
