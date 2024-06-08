@@ -1,11 +1,617 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Header cabeçalho -->
+    <header class="w-full h-20 flex items-center justify-around">
+      <!-- Logo do centro -->
+      <div class="h-16">
+        <img src="./src/img/Sem título.png" class="h-full" alt="" />
+      </div>
+      <!-- Seção dos links -->
+      <nav
+        class="*:ml-5 animate__backInRight gap-y-5 *:text-blue-900 -right-3/4  z-20 transition-all duration-100 lg:flex fixed bg-white lg:items-center flex-col px-5 py-5 w-3/4 lg:w-2/4 lg:justify-end lg:right-0 top-0 h-full lg:flex-row lg:relative"
+        id="navbar"
+      >
+        <!-- ícone que faz o fechamento do menu -->
+        <div class="lg:hidden flex" id="btn-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <!-- Links -->
+        <a href="" class="hover:border-b hover:border-blue-900 mt-10 lg:mt-0"
+          >HOME</a
+        >
+        <a href="" class="hover:border-b hover:border-blue-900">SOBRE</a>
+        <a href="" class="hover:border-b hover:border-blue-900">CURSOS</a>
+        <a href="" class="hover:border-b hover:border-blue-900">CADASTRA-SE</a>
+        <a href="" class="hover:border-b hover:border-blue-900">LOGIN</a>
+      </nav>
+      <!-- Ícone que faz a bertura do menu quando tiver no dispositivo mobile -->
+      <div class="lg:hidden flex *:text-blue-900" id="btn-open">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </header>
+    <!-- Secção de hiro section -->
+    <section
+      class="lg:h-[500px] h-96 w-full bg-slate-800 backdrop-blur-xl flex items-end"
+    >
+      <!-- Imagem do fundo da parte superior  -->
+
+      <img
+        src="./src/img/ivan-aleksic-PDRFeeDniCk-unsplash.jpg"
+        alt=""
+        class="absolute w-full h-full object-cover"
+      />
+      <!-- Cor tranparente azul que está sobre a imagem de fundo -->
+      <div
+        class="w-full h-full z-10 absolute flex bg-blue-950/70 2xl:px-60 lg:px-40 lg:flex-row flex-col"
+      >
+        <!-- Título -->
+        <div class="z-20 lg:w-1/2 h-full flex items-center">
+          <h1
+            class="lg:text-6xl md:text-center text-3xl font-bold text-center lg:text-left text-white"
+          >
+            Os melhores resultados estão no centro Makanbro
+          </h1>
+        </div>
+        <!-- Imagem ao lado do título -->
+        <div class="w-1/2 z-20 h-full lg:flex justify-end hidden">
+          <img
+            src="./src/img/IMG-20230328-WA0005.png"
+            alt=""
+            class="z-20 h-full"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Seja bm vindo -->
+    <section class="mt-20 text-center lg:w-4/5 lg:px-52 px-5 mx-auto">
+      <h2 class="text-3xl font-bold ">
+        Bem-vindo ao Centro de Formação Mukenbro
+      </h2>
+      <p class="text-slate-700 text-base mt-5">
+        No Centro de Formação Mukenbro, estamos comprometidos em fornecer
+        educação de qualidade nas áreas de informática e eletrônica. Nossa
+        missão é capacitar os alunos com as habilidades práticas e teóricas
+        necessárias para se destacarem no mercado de trabalho atual.
+      </p>
+    </section>
+    <!-- Cards -->
+    <section
+      class="lg:px-10 md:px-32 md:gap-y-10 px-5 mt-20 *:w-full *:h-72 *:shadow-lg *:bg-white *:flex *:flex-col *:items-center w-full flex lg:flex-row flex-col gap-y-10 justify-center gap-x-10"
+    >
+      <!-- 1 card -->
+      <article
+        class="rounded-xl relative before:[''] before:rounded-xl before:absolute before:w-full before:h-72 duration-100 before:duration-100 transition-all before:bg-blue-600 before:-z-10 before:-rotate-6 lg:before:-rotate-0 lg:hover:before:-rotate-6"
+      >
+        <div class="h-full flex flex-col justify-center gap-y-5 px-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10 text-blue-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0 1 20.25 6v12A2.25 2.25 0 0 1 18 20.25H6A2.25 2.25 0 0 1 3.75 18V6A2.25 2.25 0 0 1 6 3.75h1.5m9 0h-9"
+            />
+          </svg>
+          <h2 class="text-xl font-bold">Lorem ipun</h2>
+          <p class="text-slate-700 text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            placeat, assumenda quo reiciendis voluptates nisi nobis tenetur
+          </p>
+        </div>
+      </article>
+      <!-- 2 card -->
+      <article
+        class="rounded-xl relative before:[''] before:rounded-xl before:absolute before:w-full before:h-72 duration-100 before:duration-100 transition-all before:bg-blue-600 before:-z-10 before:-rotate-6 lg:before:-rotate-0 hover:before:-rotate-6"
+      >
+        <div class="h-full flex flex-col justify-center gap-y-5 px-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10 text-blue-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+
+          <h2 class="text-xl font-bold">Lorem ipun</h2>
+          <p class="text-slate-700 text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            placeat, assumenda quo reiciendis voluptates nisi nobis tenetur
+          </p>
+        </div>
+      </article>
+      <!-- 3 card -->
+      <article
+        class="rounded-xl relative before:[''] before:rounded-xl before:absolute before:w-full before:h-72 duration-100 before:duration-100 transition-all before:bg-blue-600 before:-rotate-6 lg:before:-rotate-0 before:-z-10 hover:before:-rotate-6"
+      >
+        <div class="h-full flex flex-col justify-center gap-y-5 px-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-10 text-blue-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+
+          <h2 class="text-xl font-bold">Lorem ipun</h2>
+          <p class="text-slate-700 text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            placeat, assumenda quo reiciendis voluptates nisi nobis tenetur
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- Sobre nós -->
+    <section
+      class="mt-10  w-full bg-gray-100 h-screen md:h-full md:py-10 md:px-16 flex lg:flex-row flex-col justify-around gap-x-10 lg:p-20 p-5"
+    >
+      <img
+        src="./src/img/img.png"
+        alt=""
+        class="lg:w-1/2 object-cover lg:flex hidden animate__fadeInLeft"
+      />
+      <div class="flex flex-col lg:w-1/2 justify-around">
+        <div class="space-y-5">
+          <h2 class="text-4xl font-bold inline-block inset-y-9">Sobre nós</h2>
+          <p class="text-slate-700">
+            O Centro de Formação Mukenbro surgiu com o propósito de oferecer
+            educação técnica de alta qualidade nas áreas de informática e
+            eletrônica. Desde então, temos capacitado centenas de alunos,
+            preparando-os para as demandas do mercado de trabalho moderno.
+          </p>
+          <p class="text-slate-700">
+            <strong class="text-lg text-slate-800">Nossa Missão </strong><br />
+            Nossa missão é proporcionar um ambiente de aprendizado inovador e
+            estimulante, onde os alunos possam desenvolver suas habilidades e
+            alcançar seus objetivos profissionais.
+          </p>
+
+          <p class="text-slate-700">
+            <strong class="text-lg text-slate-800"
+              >Nossos Valores:
+              <br />
+            </strong>
+
+            <strong class="text-slate-800">Excelência:</strong> Buscamos a
+            excelência em tudo o que fazemos.
+            <br />
+            <strong class="text-slate-800 mt-10">Inovação:</strong>
+            Estamos sempre atualizados com as últimas tendências e tecnologias.
+            Compromisso: Estamos comprometidos com o sucesso de nossos alunos.
+          </p>
+          <p class="text-slate-700">
+            <strong class="text-lg text-slate-800">Nossos Instrutores:</strong
+            ><br />
+            Nossa equipe de instrutores é composta por profissionais experientes
+            e qualificados, dedicados a compartilhar seus conhecimentos e ajudar
+            nossos alunos a alcançar o sucesso.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="lg:h-[400px] md:h-96 md:px-16 md:py-10 h-[550px] w-full relative flex lg:flex-row flex-col items-center justify-around gap-x-20 lg:px-20 p-5"
+    >
+      <img
+        src="./src/img/ivan-aleksic-PDRFeeDniCk-unsplash.jpg"
+        alt=""
+        class="h-full w-full absolute object-cover"
+      />
+      <div class="w-full h-full bg-black/90 absolute z-10 top-0"></div>
+      <div class="z-20 lg:w-1/2 space-y-5">
+        <h2
+          class="lg:text-4xl text-3xl font-bold inline-block inset-y-9 text-gray-100"
+        >
+          Por que escolher Centro Mukembro
+        </h2>
+        <p class="text-gray-300 space-y-3">
+          Na Academia Tecnológica Mukenbro, não apenas oferecemos cursos —
+          proporcionamos resultados concretos que transformam vidas e carreiras.
+          Nossa abordagem focada em qualidade e prática garante que cada aluno
+          saia preparado para enfrentar os desafios do mercado de trabalho
+          atual.
+        </p>
+      </div>
+      <div class="z-20 w-full lg:w-1/2 space-y-5">
+        <div class="space-y-3">
+          <span class="text-white fonte-semibold">Competencias:</span>
+          <div class="w-full h-2 bg-white rounded-xl">
+            <div class="w-4/5 h-2 bg-blue-500 rounded-l-xl"></div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <span class="text-white fonte-semibold">Qualidade de ensino:</span>
+          <div class="w-full h-2 bg-white rounded-xl">
+            <div class="w-1/2 h-2 bg-blue-500 rounded-l-xl"></div>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <span class="text-white fonte-semibold">Inovações:</span>
+          <div class="w-full h-2 bg-white rounded-xl">
+            <div class="w-full h-2 bg-blue-500 rounded-l-xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full bg-gray-100 h-screen md:h-full md:px-16 md:py-10 flex lg:flex-row flex-col justify-around gap-x-10 lg:p-20 p-5"
+    >
+      <img
+        src="./src/img/outro.png"
+        class="lg:w-1/2 h-full object-cover lg:flex hidden"
+        alt=""
+      />
+      <div class="flex flex-col lg:w-1/2 justify-around">
+        <div class="space-y-5">
+          <h2 class="lg:text-4xl text-3xl font-bold inline-block inset-y-9">
+            Os melhores resultados estão na nossa academia tecnológica
+          </h2>
+          <p class="text-slate-700"></p>
+          <p class="text-slate-700">
+            Utilizamos métodos de ensino modernos que combinam teoria e prática,
+            facilitando a absorção de conhecimento e a aplicação real em
+            projetos. <br />
+            <br />
+            Nossos laboratórios estão equipados com as mais recentes tecnologias
+            em informática e eletrônica, proporcionando um ambiente de
+            aprendizado avançado e estimulante. <br /><br />
+            Nossa equipe de instrutores é composta por profissionais altamente
+            qualificados, com vasta experiência no setor e paixão por ensinar.
+          </p>
+          <div class="*:list-none space-x-32">
+            <div class="space-y-5">
+              <strong class="text-xl font-bold">Nossos Cursos:</strong>
+              <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-8 text-slate-300"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+                    />
+                  </svg>
+                </div>
+                <p>informática</p>
+              </div>
+
+              <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 p-3 rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-8 text-slate-300"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+                    />
+                  </svg>
+                </div>
+                <p>Electrónica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full bg-gray-800 lg:h-screen h-[900px] flex flex-col items-center justify-center gap-y-5"
+    >
+      <div class="flex justify-center items-center flex-col gap-y-5">
+        <h3 class="text-3xl font-bold text-white">Cadastra-se</h3>
+        <div class="text-slate-300 text-center lg:w-1/2 text-sm">
+          <p class="hidden lg:flex">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+            eius dolorem iste, itaque neque eaque aperiam, dicta accusamus
+            voluptatem repellendus explicabo, nesciunt vero ea non commodi
+            consectetur? Amet, nobis consequatur?
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center lg:flex-row flex-col gap-x-10 gap-y-5"
+      >
+        <article
+          class="w-96 h-80 py-3 bg-white rounded-lg flex flex-col justify-around items-center text-center px-5"
+        >
+          <div class="bg-blue-700 p-3 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-slate-300"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Como aluno</h3>
+          <p class="text-sm text-slate-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            sed facere sit dolor temporibus id animi amet ad qui. Nihil eligendi
+            velit architecto nulla doloremque ratione ut at suscipit eaque?
+          </p>
+          <a
+            href="cadastrar_alunos.html"
+            class="bg-blue-700 hover:bg-slate-200 hover:text-black text-white px-5 py-2 rounded-lg"
+            >Increver-se</a
+          >
+        </article>
+        <article
+          class="w-96 h-80 py-3 bg-white rounded-lg flex flex-col justify-around items-center text-center px-5"
+        >
+          <div class="bg-blue-700 p-3 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10 text-slate-300"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold">Como professor</h3>
+          <p class="text-sm text-slate-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            sed facere sit dolor temporibus id animi amet ad qui. Nihil eligendi
+            velit architecto nulla doloremque ratione ut at suscipit eaque?
+          </p>
+          <a
+            href="cadastrar_professor.html"
+            class="bg-slate-200 hover:bg-blue-700 hover:text-white px-5 py-2 rounded-lg"
+            >Increver-se</a
+          >
+        </article>
+      </div>
+    </section>
+    <section
+      class="w-full relative lg:h-[550px] h-[1300px] flex items-center justify-around flex-col"
+    >
+      <h2 class="z-50 font-bold text-4xl text-slate-300">Testemunhas</h2>
+      <img
+        src="./src/img/1923.jpg"
+        alt=""
+        class="absolute h-full w-full object-cover"
+      />
+      <div class="w-full h-full bg-black/90 absolute"></div>
+      <div class="flex lg:flex-row flex-col gap-x-5 gap-y-20 *:rounded-lg">
+        <article
+          class="z-20 h-72 w-96 bg-white relative flex justify-around py-16 items-center flex-col p-5 text-center text-slate-800 text-sm"
+        >
+          <div class="absolute bg-blue-700 p-5 rounded-full -top-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              width="512"
+              height="512"
+              class="fill-slate-200 size-8"
+            >
+              <path
+                d="M8,4H4A4,4,0,0,0,0,8v4a2,2,0,0,0,2,2H7.91A6.006,6.006,0,0,1,2,19a1,1,0,0,0,0,2,8.009,8.009,0,0,0,8-8V6A2,2,0,0,0,8,4Z"
+              />
+              <path
+                d="M22,4H18a4,4,0,0,0-4,4v4a2,2,0,0,0,2,2h5.91A6.006,6.006,0,0,1,16,19a1,1,0,0,0,0,2,8.009,8.009,0,0,0,8-8V6A2,2,0,0,0,22,4Z"
+              />
+            </svg>
+          </div>
+          <p>
+            O curso de Desenvolvimento Web no Mukenbro me proporcionou as
+            habilidades necessárias para iniciar minha carreira como
+            desenvolvedor. Os instrutores são extremamente atenciosos e o
+            ambiente de aprendizado é muito positivo."
+          </p>
+          ~
+          <div class="flex space-x-3 items-center">
+            <img
+              src="./src/img/ariel.jpeg"
+              alt=""
+              class="h-12 w-12 rounded-full object-cover"
+            />
+            <div class="text-left">
+              <strong class="text-base">Etiene Domingos</strong>
+              <p class="text-xs">Web Developer</p>
+            </div>
+          </div>
+        </article>
+        <article
+          class="z-20 h-72 w-96 bg-white relative flex justify-center items-center flex-col p-5 text-center text-slate-800 text-sm"
+        >
+          <div class="absolute bg-blue-700 p-5 rounded-full -top-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              width="512"
+              height="512"
+              class="fill-slate-200 size-8"
+            >
+              <path
+                d="M8,4H4A4,4,0,0,0,0,8v4a2,2,0,0,0,2,2H7.91A6.006,6.006,0,0,1,2,19a1,1,0,0,0,0,2,8.009,8.009,0,0,0,8-8V6A2,2,0,0,0,8,4Z"
+              />
+              <path
+                d="M22,4H18a4,4,0,0,0-4,4v4a2,2,0,0,0,2,2h5.91A6.006,6.006,0,0,1,16,19a1,1,0,0,0,0,2,8.009,8.009,0,0,0,8-8V6A2,2,0,0,0,22,4Z"
+              />
+            </svg>
+          </div>
+          <p>
+            A formação em Automação Industrial foi um divisor de águas para
+            minha carreira. Hoje, trabalho em uma grande empresa graças aos
+            conhecimentos adquiridos no Mukenbro.
+          </p>
+          <div class="flex space-x-3 items-center mt-10">
+            <img
+              src="./src/img/justino.jpeg"
+              alt=""
+              class="h-12 w-12 rounded-full object-cover"
+            />
+            <div class="text-left">
+              <strong class="text-base">Ariel Cabet</strong>
+              <p class="text-xs">Electrónico</p>
+            </div>
+          </div>
+        </article>
+        <article
+          class="z-20 h-72 w-96 bg-white relative flex justify-center flex-col items-center p-5 text-center text-slate-800 text-sm"
+        >
+          <div class="absolute bg-blue-700 p-5 rounded-full -top-8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Outline"
+              viewBox="0 0 24 24"
+              width="512"
+              height="512"
+              class="fill-slate-200 size-8"
+            >
+              <path
+                d="M8,4H4A4,4,0,0,0,0,8v4a2,2,0,0,0,2,2H7.91A6.006,6.006,0,0,1,2,19a1,1,0,0,0,0,2,8.009,8.009,0,0,0,8-8V6A2,2,0,0,0,8,4Z"
+              />
+              <path
+                d="M22,4H18a4,4,0,0,0-4,4v4a2,2,0,0,0,2,2h5.91A6.006,6.006,0,0,1,16,19a1,1,0,0,0,0,2,8.009,8.009,0,0,0,8-8V6A2,2,0,0,0,22,4Z"
+              />
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            accusamus aliquam modi, dicta facere laborum fugit nostrum mollitia
+            officia, doloremque praesentium.
+          </p>
+          <div class="flex space-x-3 items-center mt-10">
+            <img
+              src="./src/img/Ana.jpeg"
+              alt=""
+              class="h-12 w-12 rounded-full"
+            />
+            <div class="text-left">
+              <strong class="text-base">Ana Natanaela</strong>
+              <p class="text-xs">Web Developer</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer
+      class="w-full flex flex-col items-center lg:px-32 px-5 gap-x-10 bg-white"
+    >
+      <!-- icone com o conteúdo -->
+      <div
+        class="border-slate-800 flex flex-col lg:flex-row md:flex-row md:justify-between lg:justify-between justify-around items-center w-full lg:h-32 h-44"
+      >
+        <div class="flex space-x-5">
+          <img src="./src/img/Sem título.png" alt="" class="w-full h-20" />
+        </div>
+        <!--  -->
+        <div class="flex space-x-2">
+          <input
+            type="email"
+            class="h-10 lg:w-72 w-full bg-transparent border-2 text-slate-500 border-slate-300 rounded-md px-2 placeholder:text-slate-900 focus:border-1 focus:border-blue-700 focus:outline-1 focus:outline-blue-700 transition-all duration-300 outline-none"
+            placeholder="Endereço email"
+          />
+          <input
+            type="submit"
+            value="Subscrever"
+            class="bg-blue-800 hover:bg-blue-900 focus:border-1 text-slate-300 focus:border-blue-700 focus:outline-1 focus:outline-blue-700 transition-all duration-300 outline-none px-4 py-2 rounded-md h-10 active:border-2 active:border-blue-800"
+          />
+        </div>
+      </div>
+      <div
+        class="border-t border-slate-300 w-full lg:h-20 h-32 flex flex-col lg:flex-row md:flex-row md:justify-between lg:justify-between justify-around items-center"
+      >
+        <!-- links -->
+        <ul>
+          <li class="flex gap-x-5 *:text-xs">
+            <a href="" class="text-slate-900 hover:text-blue-700">HOME</a>
+            <a href="" class="text-slate-900 hover:text-blue-700">SOBRE</a>
+            <a href="" class="text-slate-900 hover:text-blue-700">SERVIÇOS</a>
+            <a href="" class="text-slate-900 hover:text-blue-700">CONTACTOS</a>
+          </li>
+        </ul>
+        <!-- techmisters -->
+        <p class="text-slate-900">
+          Site criado pelos
+          <a href="" class="text-blue-700 hover:text-blue-600">Alpha</a>
+        </p>
+      </div>
+    </footer>
+    <script src="./src/script.js"></script>
+  </body>
 </html>
