@@ -1,0 +1,15 @@
+@layer base;
+@layer components;
+@layer utilities{
+    .open{
+        right: 0 !important;
+        transition: all !important;
+        transition-duration: 1s !important;
+    }
+    .hidden-nav{
+        right: -75% !important;
+        transition: all !important;
+        transition-duration: 1s !important;
+    }
+    
+};
